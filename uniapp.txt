@@ -1,0 +1,61 @@
+﻿onNavigationBarButtonTap监听自定义状态栏btn，
+文字图标&改成\u
+onPullDownRefresh监听下拉刷新 "enablePullDownRefresh":true开启下拉刷新 uni.stopPullDownRefresh();
+onReachBottom监听上拉加载 "onReachBottomDistance": 200开启上拉加载
+"navigationBarBackgroundColor": "#D60F08",  //导航栏背景
+"navigationBarTextStyle": "white",  //导航栏文字颜色
+"navigationStyle":"custom"//关闭导航栏
+
+
+
+const { windowWidth, windowHeight } = uni.getSystemInfoSync();
+
+子元素点击事件加stop阻止事件冒泡，小程序click换成cantch
+
+onPageScroll 监听页面滚动
+
+
+uni.getSystemInfo({
+    success: function (res) {
+        console.log(res.model);
+        console.log(res.pixelRatio);
+        console.log(res.windowWidth);
+        console.log(res.windowHeight);
+        console.log(res.language);
+        console.log(res.version);
+        console.log(res.platform);
+    }
+});
+
+onBackPress  //监听返回
+
+"popGesture": "none" //禁用苹果左滑
+
+"autoBackButton":false  隐藏返回按钮
+
+uni.pageScrollTo({
+ scrollTop: 99999999999,
+})   //滚动到底部
+
+
+uni.setNavigationBarColor({
+	backgroundColor:'rgb(235,235,235)',
+	frontColor:'#ffffff'
+	})	
+},500)   //子页面延迟更改背景，不然不生效
+
+
+
+
+uni.createSelectorQuery().selectAll(".recommend_text").fields({
+				size:true
+			},res=>{
+				console.log(res)
+	}).exec()//获取多个类的节点信息
+
+rect:true,   //是否返回节点布局位置信息{left,top,right,bottom}
+	
+size:true,  //是否返回节点尺寸信息{width，height}
+	
+scrollOffset:true //是否返回节点滚动信息{scrollLeft,scrollTop}
+

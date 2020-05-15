@@ -1,0 +1,3 @@
+controller 控制器  根据不同接口调用service
+model 数据库对象 查询数据库函数
+service 逻辑层   引用model，做逻辑处理

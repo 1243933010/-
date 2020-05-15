@@ -1,0 +1,34 @@
+//不换行 省略号
+display: -webkit-box;
+ overflow: hidden;
+  white-space: normal;
+ text-overflow: ellipsis;
+ word-wrap: break-word;
+-webkit-line-clamp:1;
+ -webkit-box-orient: vertical; 
+
+white-space: nowrap;//文字禁止换行
+
+
+
+//定位居中
+width: 600px;
+height: 400px;
+position: absolute;
+left: 50%;
+top: 50%;   
+transform: translate(-50%, -50%);
+
+
+box-shadow:0px 0px 5px black;
+
+/*设置四边不同颜色外阴影*/
+  .element{
+     box-shadow:-10px 0 10px red, /*左边阴影*/
+     10px 0 10px yellow, /*右边阴影*/　　　　　　
+-10px 10px blue, /*顶部阴影*/
+10px 10px green; /*底边阴影*/
+}
+
+
+ background-size: contain;

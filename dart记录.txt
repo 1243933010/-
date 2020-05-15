@@ -1,0 +1,10 @@
+一个文件只有main函数会执行，其他函数放在main里面才会被执行；
+打印api是print；
+var声明变量
+if判断的条件只能是布尔值
+void标识的函数不能返回；
+枚举
+泛型
+runtimeType 获取当前对象类型 
+枚举类型也称为 enumerations 或 enums ， 是一种特殊的类，用于表示数量固定的常量值。
+
