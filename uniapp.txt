@@ -27,6 +27,9 @@ uni.getSystemInfo({
     }
 });
 
+
+
+
 onBackPress  //监听返回
 
 "popGesture": "none" //禁用苹果左滑
